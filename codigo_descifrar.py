@@ -19,8 +19,6 @@ print("=== TEXTO CIFRADO ORIGINAL ===")
 print(texto)
 print("\n" + "="*40 + "\n")
 
-# Aquí defines el abecedario y su sustitución
-# Solo escribe la letra correspondiente, deja las demás como ""
 abecedario = {
     'A': '',
     'B': '',
@@ -51,7 +49,6 @@ abecedario = {
     'Z': ''
 }
 
-# Para las letras que no defines, puedes asignar automáticamente según frecuencia
 letras = [c.upper() for c in texto if c.isalpha()]
 conteo = Counter(letras)
 orden_cifrado = [letra for letra, _ in conteo.most_common()]
